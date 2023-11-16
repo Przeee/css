@@ -1,0 +1,39 @@
+<section class="body">
+    <section class="header">
+        <div class="header__box">
+            <div class="icon">B</div>
+            {{> header}}
+        </div>
+    </section>
+    <section class="hero">
+        <div class="hero__content">
+            {{#with hero}}
+                <div class="hero--title">{{title}}</div>
+                <div class="hero--text">{{text}}</div>
+            {{/with}}
+        </div>
+    </section>
+    <section class="plans">
+        <div class="plans__content">
+            {{#each plans}}
+                <div class="card">
+                    <div class="card--title">{{name}}</div>
+                    <div class="card--price">{{price}}</div>
+                    <div class="card--options">
+                        {{#each features}}
+                            <div>
+                                {{.}}
+                            </div>
+                        {{/each}}
+                    </div>
+                    <div class="card--button">
+                        <button class="card--btn">{{button}}</button>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+    </section>
+    <section class="footer">
+        {{> footer}}
+    </section>
+</section>
