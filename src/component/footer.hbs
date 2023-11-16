@@ -1,0 +1,20 @@
+<div class="footer__body">
+    <div class="footer--info">
+        <div class="footer--coop">B</div>
+        <div class="coop">Copyright 2023</div>
+    </div>
+    <div class="footer--link">
+        {{#each footer}}
+            <div class="card--link">
+                <div class="footer__card--title">{{title}}</div>
+                <div>
+                    {{#each links}}
+                        <div class="link">
+                            <button class="button--link" href="{{url}}">{{text}}</button>
+                        </div>
+                    {{/each}}
+                </div>
+            </div>
+        {{/each}}
+    </div>
+</div>
