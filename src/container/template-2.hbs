@@ -1,0 +1,83 @@
+<section class="body">
+    <header class="header">
+        <div class="header__box">
+            <div class="icon">B</div>
+            {{> header}}
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero__content">
+            {{#with hero}}
+                <div class="hero--title">{{title}}</div>
+                <div class="hero--text">{{text}}</div>
+                <button class="hero--btn" href="{{button.url}}">{{button.text}}</button>
+            {{/with}}
+        </div>
+    </section>
+    <section class="preview">
+        {{#each preview}}
+            <div class="preview__card">
+                <div class="card__top">
+                    <span class="date">{{date}}</span>
+                    {{#each category}}
+                        <span class="card--category category--color{{id}}">{{text}}</span>
+                    {{/each}}
+                </div>
+                <div class="card--title">{{title}}</div>
+                <p class="card--p">{{text}}</p>
+                <a class="card--a" href="#">Continue reading</a>
+            </div>
+        {{/each}}
+    </section>
+    
+    <section class="main">
+        <div class="lists">
+            <div class="lists--title">List of posts</div>
+            <div class="categories">
+                {{#each categories}}
+                    <button class="cat--btn">{{text}}</button>
+                {{/each}}
+            </div>
+        </div>
+        <div class="newsbox">
+            <div class="news">
+                {{#each news}}
+                    <div class="news__card">
+                        <div class="card--title">{{title}}</div>
+                        <div class="date">
+                            <span><date>{{date}}</date> by</span>
+                            <span class="name">{{author}}</span>
+                        </div>
+                        <p class="card--p">{{description}}</p>
+                        <a class="card--a" href="#">Continue reading</a>
+                    </div>
+                {{/each}}
+            </div>
+            <div class="news__nav">
+                <div class="about">
+                    <div class="card--title">About</div>
+                        <p class="card--p">{{about}}</p>
+                </div>
+                <div class="archive">
+                    <div class="card--title">Arhives</div>
+                    <div class="archive--link">
+                        {{#each archive}}
+                            <a class="archive--a" href="{{url}}">{{text}}</a>
+                        {{/each}}
+                    </div>
+                </div>
+                <div class="archive">
+                    <div class="card--title">Social</div>
+                    <div class="archive--link">
+                        {{#each social}}
+                            <a class="archive--a" href="{{url}}">{{text}}</a>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        {{> footer}}
+    </footer>
+</section>
