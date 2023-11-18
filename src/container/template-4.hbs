@@ -1,0 +1,40 @@
+<section class="body-content">
+    <header class="header">
+        <div class="icon">B</div>
+        {{> header}}
+    </header>
+    <section class="hero">
+        {{#with main}}
+            <div class="hero-text">
+                <div class="hero-title">{{heading}}</div>
+                <p class="hero-p">{{description}}</p>
+                <button class="btn hero-btn" href="{{href}}">{{button}}</button>
+            </div>
+            <div class="hero-img">
+                <img class="img" src="{{image}}" alt="photo">
+            </div>
+        {{/with}}
+    </section>
+    <section class="blog">
+        {{#each featured}}
+            <div class="blog-card">
+                <div><img class="card-img" src="{{photo}}" alt="img"></div>
+                <div class="card-title">{{heading}}</div>
+                <p class="card-p">{{info}}</p>
+                <a class="card-a" href="{{linkUrl}}">{{linkText}}</a>
+            </div>
+        {{/each}}
+    </section>
+    <section class="actions">
+        {{#each actions}}
+            <div class="act-form">
+                <div class="form-title">{{heading}}</div>
+                    <button class="btn form-btn" href="{{url}}">{{text}}</button>
+            </div>
+        {{/each}}
+    </section>
+    
+    <footer class="footer">
+        {{> footer}}
+    </footer>
+</section>
