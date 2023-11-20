@@ -1,0 +1,54 @@
+<section class="body-content">
+    <header class="header">
+        <div class="icon">B</div>
+        {{> header}}
+    </header>
+    <section class="main">
+        <div class="messages">
+            {{#with messages}}
+                <div class="list-title">{{title}}</div>
+                {{#each list}}
+                    <div class="message">
+                        <div class="mes-box">
+                            <div class="mes-title">{{name}}</div>
+                            <p class="mes-p">{{message}}</p>
+                        </div>
+                        <div class="mes-date">{{day}}</div>
+                    </div>
+                {{/each}}
+            {{/with}}
+            <div class="mes-link">
+                <a class="mes-a" href="#">All messages</a>
+            </div>
+        </div>
+        <div class="form">
+            {{#with form}}
+                <div class="form-title">{{title}}</div>
+                <div class="box-input">
+                    {{#each inputs}}
+                        <input class="form-input" type="{{type}}" placeholder="{{placeholder}}" id="{{id}}" name="{{name}}">
+                    {{/each}}
+                </div>
+                    <div class="form-checkbox"> 
+                        {{#with checkbox}}
+                            <input class="check" type="checkbox" name="{{name}}">
+                            <label class="label-check">{{label}}</label>
+                        {{/with}}
+                    </div>
+                    <button class="btn form-btn">{{button}}</button>
+                    <p class="form-info">{{info}}</p>
+            {{/with}}
+        </div>
+    </section>
+    <section class="advantages">
+        {{#each advantages}}
+            <div class="adv-box">
+                <div class="adv-title">{{title}}</div>
+                <p class="adv-p">{{text}}</p>
+            </div>
+        {{/each}}
+    </section>
+    <footer class="footer">
+        {{> footer}}
+    </footer>
+</section>
