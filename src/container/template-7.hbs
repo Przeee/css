@@ -1,0 +1,32 @@
+<section class="body-content">
+    <section class="header">
+        {{> headerDark data=header}}
+    </section>
+    <section class="hero">
+        {{#with hero}}
+            <div class="hero-title">{{title}}</div>
+            <p class="decsription">{{description}}</p>
+            <div class="hero-but">
+                <button class="btn hero-btn" href="{{button.url}}">{{button.text}}</button>
+            </div>
+        {{/with}}
+    </section>
+    <section class="about">
+        {{#with about}}
+            <div class="about-title">{{heading}}</div>
+            <p class="about-info">{{info}}</p>
+        {{/with}}
+    </section>
+    <main class="articles">
+        <div class="art-top">
+            <div class="art-top-title">Our Articles</div>
+            <button class="btn art-top-btn" href="#">View All</button>
+        </div>
+        <div class="art-body">
+                {{> articleCardDark data=articles}}
+        </div>
+    </main>
+    <section class="footer">
+        {{> footerDark data=footer}}
+    </section>
+</section>

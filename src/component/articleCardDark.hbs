@@ -1,0 +1,11 @@
+{{#each data}}
+    <div class="cardDark" id="{{id}}">
+        <div class="img-box">
+            <img class="card-img" src="{{photo}}" alt="img">
+            {{#if isNew}}<div class="isNews">New</div>{{/if}}
+        </div>
+        <div class="card-title">{{name}}</div>
+        <p class="card-p">{{description}}</p>
+        <button class="btn card-btn" href="#">Read All</button>
+    </div>
+{{/each}}
