@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Slask page</title>
+		<meta charset='utf-8' />
+
+		<link href='css/normalize.css' rel='stylesheet' />
+		<link href='css/andr.css' rel='stylesheet' />
+	</head>
+
+	<body>
+		<section class="body">
+			<section class="body-content">
+				<header class="header">
+					<div class="logo">Logo</div>
+					<div class="Nav">navigation</div>
+				</header>
+				<main class="main">
+					{{#each card}}
+						<div class="card card-hover">
+							<div class="card-photo"><img class="card-img" src="{{img}}" alt="photo"></div>
+							<div class="card-title">{{title}}</div>
+							<p class="card-p">{{description}}</p>
+							<div class="card-foot">
+								<div class="card-price">{{price}}</div>
+								<button class="btn card-btn hover">{{button}}</button>
+							</div>
+						</div>
+					{{/each}}
+				</main>
+			</section>
+		</section>
+	</body>
+
+</html>

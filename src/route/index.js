@@ -18,6 +18,104 @@ router.get('/', function (req, res) {
   //                  ↑↑ сюди вводимо JSON дані
 })
 
+router.get('/slask', function (req, res) {
+  // res.render генерує нам HTML сторінку
+
+  //            ↙ cюди вводимо назву файлу з сontainer
+  res.render('slask', {
+    layout: null,
+  })
+  //                  ↑↑ сюди вводимо JSON дані
+})
+
+router.get('/andr', function (req, res) {
+  // res.render генерує нам HTML сторінку
+
+  //            ↙ cюди вводимо назву файлу з сontainer
+  res.render('andr', {
+    layout: null,
+    card: [
+      {
+      img: '/css/img/1.jpg',
+      title: 'Пиріжок',
+      description: 'Опис цього ахуєнного пиріжечка по доступній ціні',
+      button: 'Купити',
+      price: '120 грн',
+      },
+      {
+      img: '/css/img/1.jpg',
+      title: 'Пиріжок',
+      description: 'Опис цього ахуєнного пиріжечка по доступній ціні',
+      button: 'Купити',
+      price: '120 грн',
+      },
+      {
+      img: '/css/img/1.jpg',
+      title: 'Пиріжок',
+      description: 'Опис цього ахуєнного пиріжечка по доступній ціні',
+      button: 'Купити',
+      price: '120 грн',
+      },
+      {
+      img: '/css/img/1.jpg',
+      title: 'Пиріжок',
+      description: 'Опис цього ахуєнного пиріжечка по доступній ціні',
+      button: 'Купити',
+      price: '120 грн',
+      },
+      {
+      img: '/css/img/1.jpg',
+      title: 'Пиріжок',
+      description: 'Опис цього ахуєнного пиріжечка по доступній ціні',
+      button: 'Купити',
+      price: '120 грн',
+      },
+      {
+      img: '/css/img/1.jpg',
+      title: 'Пиріжок',
+      description: 'Опис цього ахуєнного пиріжечка по доступній ціні',
+      button: 'Купити',
+      price: '120 грн',
+      },
+      {
+      img: '/css/img/1.jpg',
+      title: 'Пиріжок',
+      description: 'Опис цього ахуєнного пиріжечка по доступній ціні',
+      button: 'Купити',
+      price: '120 грн',
+      },
+      {
+      img: '/css/img/1.jpg',
+      title: 'Пиріжок',
+      description: 'Опис цього ахуєнного пиріжечка по доступній ціні',
+      button: 'Купити',
+      price: '120 грн',
+      },
+      {
+      img: '/css/img/1.jpg',
+      title: 'Пиріжок',
+      description: 'Опис цього ахуєнного пиріжечка по доступній ціні',
+      button: 'Купити',
+      price: '120 грн',
+      },
+      {
+      img: '/css/img/1.jpg',
+      title: 'Пиріжок',
+      description: 'Опис цього ахуєнного пиріжечка по доступній ціні',
+      button: 'Купити',
+      price: '120 грн',
+      },
+      {
+      img: '/css/img/1.jpg',
+      title: 'Пиріжок',
+      description: 'Опис цього ахуєнного пиріжечка по доступній ціні',
+      button: 'Купити',
+      price: '120 грн',
+      },
+    ],
+  })
+  //                  ↑↑ сюди вводимо JSON дані
+})
 router.get('/template-1', function (req, res) {
   // res.render генерує нам HTML сторінку
 

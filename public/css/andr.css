@@ -1,0 +1,86 @@
+@layer normalize, block, element, mod;
+
+:root {
+  min-width: 320px;
+  background-color: var(--bgcolor);
+  color: white;
+  --bgcard: red;
+  --bgcolor: black;
+  --colorb: rgb(173, 173, 173);
+
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+}
+.body-content {
+    display: grid;
+    grid-column: auto;
+    gap: 40px;
+    max-width: 1200px;
+    width: 100%;
+}
+.btn {
+  width: 100%;
+  padding: 8px 16px;
+}
+a {
+  text-decoration: none;
+}
+.hover:hover {
+  opacity: 0.7;
+}
+.header {
+  display: grid;
+  grid-template-columns: auto max-content;
+  justify-content: space-between;
+  gap: 20px;
+  border: 1px solid rgba(128, 128, 128, 0.712);
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 10px;
+}
+.logo {
+
+}
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.card {
+  display: grid;
+  grid-column: auto;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  padding: 10px;
+  background-color: var(--bgcard);
+  border: 1px solid var(--color-b);
+  border-radius: 10px;
+}
+.card-photo {
+}
+.card-img {
+  max-width: 100%;
+}
+.card-title {
+  font-size: 30px;
+}
+.card-p {
+  font-size: 18px;
+  line-height: 150%;
+}
+.card-foot {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  justify-content: space-between;
+  gap: 20px;
+}
+.card-price {
+  align-self: center;
+}
+.card-btn {
+  
+}

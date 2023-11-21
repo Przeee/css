@@ -1,0 +1,16 @@
+@layer normalize, block, element, mod;
+
+:root {
+  min-width: 320px;
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+}
+.body-content {
+    display: grid;
+    grid-column: auto;
+    max-width: 1200px;
+    width: 100%;
+}
