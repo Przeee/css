@@ -1,0 +1,69 @@
+@layer normalize, block, element, mod, adaptive;
+
+@font-face {
+  font-family: 'HelveticaNeueBold';
+  src: url(/font/HelveticaNeueBold.ttf);
+}
+
+:root {
+  min-width: 320px;
+
+  --color-b: #611f69;
+  --color-t: #000;
+  --bgcolor-2: #f4ede4;
+  --bgcolor-1: white;
+
+  --gap-1: 16px;
+  --gap-2: 32px;
+  --gap-3: 64px;
+
+  --fs-0: 14px;
+  --fs-1: 16px;
+  --fs-2: 18px;
+  --fs-3: 20px;
+  --fs-4: 24px;
+  --fs-5: 28px;
+  --fs-6: 32px;
+  --fs-7: 50px;
+
+  --p-s: 16px;
+  --p-m: 19px;
+  --p-l: 23px;
+
+  --br-s: 4px;
+}
+.body {
+  display: flex;
+  justify-content: center;
+  padding: 0 15px;
+  font-family: 'HelveticaNeueBold';
+}
+.body-content {
+}
+
+@layer block {
+}
+@layer element {
+  .a {
+    text-decoration: none;
+  }
+  .btn {
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 8px 21px;
+    max-width: 100%;
+  }
+}
+@layer mod {
+  .btn:hover {
+    opacity: 0.7;
+  }
+  .a:hover {
+    opacity: 0.7;
+  }
+  .box-shadow {
+    box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.1);
+  }
+}
+@layer adaptive {
+}
